@@ -17,6 +17,18 @@ public class BookController {
 	@Autowired
 	BookService bookservice;
 	
+	/* test */
+	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	public ModelAndView test() {
+		return new ModelAndView("index");
+	}
+	
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
+	public ModelAndView test2() {
+		return new ModelAndView("pages/samples/register");
+	}
+	/* test */
+	
 	@RequestMapping(value = "/create", method = RequestMethod.GET)
 	public ModelAndView create() {
 		return new ModelAndView("book/create");
