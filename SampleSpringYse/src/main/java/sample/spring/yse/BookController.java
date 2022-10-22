@@ -19,12 +19,17 @@ public class BookController {
 	
 	/* test */
 	@RequestMapping(value = "/index", method = RequestMethod.GET)
-	public ModelAndView test() {
+	public ModelAndView index() {
 		return new ModelAndView("index");
 	}
 	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public ModelAndView login() {
+		return new ModelAndView("pages/samples/login");
+	}
+	
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
-	public ModelAndView test2() {
+	public ModelAndView register() {
 		return new ModelAndView("pages/samples/register");
 	}
 	/* test */
